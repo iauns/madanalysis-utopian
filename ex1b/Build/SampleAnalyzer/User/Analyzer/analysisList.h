@@ -1,0 +1,12 @@
+#include "SampleAnalyzer/User/Analyzer/ex1b_iauns.h"
+#include "SampleAnalyzer/Process/Analyzer/AnalyzerManager.h"
+#include "SampleAnalyzer/Commons/Service/LogStream.h"
+
+// -----------------------------------------------------------------------------
+// BuildTable
+// -----------------------------------------------------------------------------
+void BuildUserTable(MA5::AnalyzerManager& manager)
+{
+  using namespace MA5;
+  manager.Add("ex1b_iauns",new ex1b_iauns);
+}
